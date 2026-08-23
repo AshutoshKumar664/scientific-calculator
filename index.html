@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="calculator">
+    <h3><a href="#">Ashutosh's Calculator</a></h3>
+    
+    <div class="display">
+      <div id="expr" class="expr">Expression</div>
+      <div id="result" class="result">0</div>
+    </div>
+
+    <div class="controls">
+      <select id="angleMode">
+        <option value="deg">Deg</option>
+        <option value="rad">Rad</option>
+      </select>
+      <span id="mode">Deg</span>
+    </div>
+
+    <div id="keys" class="keys">
+      <button data-val="sin">sin</button>
+      <button data-val="cos">cos</button>
+      <button data-val="tan">tan</button>
+      <button data-val="ln">ln</button>
+      <button data-val="log">log</button>
+      <button data-action="clear" class="op">C</button>
+
+      <button data-val="(">(</button>
+      <button data-val=")">)</button>
+      <button data-val="^">^</button>
+      <button data-val="sqrt">√</button>
+      <button data-val="%">%</button>
+      <button data-action="back" class="op">DEL</button>
+
+      <button data-val="7">7</button>
+      <button data-val="8">8</button>
+      <button data-val="9">9</button>
+      <button data-val="/">÷</button>
+      <button data-val="pi">π</button>
+      <button data-val="e">e</button>
+
+      <button data-val="4">4</button>
+      <button data-val="5">5</button>
+      <button data-val="6">6</button>
+      <button data-val="*">×</button>
+      <button data-val="pow">xy</button>
+      <button data-val="abs">abs</button>
+
+      <button data-val="1">1</button>
+      <button data-val="2">2</button>
+      <button data-val="3">3</button>
+      <button data-val="-">−</button>
+      <button data-val=",">,</button>
+      <button data-action="ans">Ans</button>
+
+      <button data-val="0">0</button>
+      <button data-val=".">.</button>
+      <button data-action="equals" class="eq">=</button>
+      <button data-val="+">+</button>
+      <button id="mPlus">M+</button>
+      <button id="mMinus">M−</button>
+
+      <button id="mr">MR</button>
+      <button id="mc">MC</button>
+      <button id="historyBtn">History</button>
+      <button id="copyBtn">Copy</button>
+    </div>
+
+    <div id="history" class="history"></div>
+    <p class="footer" align="left">Developed by <b>Ashutosh Kumar</b></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
